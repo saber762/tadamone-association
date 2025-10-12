@@ -1,0 +1,207 @@
+/* خط عربي */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+/* الحاوية العامة */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* الرأس */
+header {
+    background-color: white; /* أبيض تحت اللوغو */
+    color: #006400; /* أخضر للنصوص */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #006400;
+}
+
+header .logo {
+    width: 150px; /* تكبير اللوغو */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header .header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .arabic-text {
+    color: #006400;
+    font-weight: bold;
+    flex: 1;
+    text-align: right; /* العربي على اليمين */
+}
+
+header .french-text {
+    color: #006400;
+    font-weight: bold;
+    flex: 1;
+    text-align: left; /* الفرنسي على اليسار */
+}
+
+/* الأقسام */
+.section {
+    padding: 60px 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bg-light {
+    background-color: #ffe6e6; /* أحمر فاتح */
+}
+
+/* الأقسام ثنائية اللغة */
+.bilingual {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text-ar {
+    flex: 1;
+    min-width: 300px;
+    direction: rtl; /* كتابة من اليمين لليسار */
+    text-align: right;
+}
+
+
+.text-fr {
+    flex: 1;
+    min-width: 300px;
+    direction: ltr; /* كتابة من اليسار لليمين */
+    text-align: left;
+}
+
+/* العناوين */
+h2 {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* روابط الاتصال */
+#contact a {
+    color: #006400;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* أيقونات Font Awesome */
+#contact i {
+    color: #006400;
+    margin-right: 8px;
+}
+
+.text-ar i.file-icon {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/* تنسيق الكود */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+
+/* الفوتر */
+footer {
+    background-color: #8B0000; /* أحمر داكن */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* تجاوب الهواتف */
+@media (max-width: 768px) {
+    .bilingual {
+        flex-direction: column;
+        text-align: center;
+           }
+    .text-ar, .text-fr {
+        text-align: center;
+    }
+    header .header-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* رأس - شبكة ثلاثية: فرنسي | لوجو | عربي */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* عمود يسار مرن - وسط مستقل للوغو - عمود يمين مرن */
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 3px solid #006400; /* خط أخضر أسفل الرأس حسب تصميمك */
+  background-color: white;
+}
+
+/* اللوجو في منتصف العمود الأوسط */
+.logo-center {
+  justify-self: center; /* يضمن أن اللوجو يبقى مركزياً */
+}
+
+.logo {
+  width: 160px; /* حجم اللوغو - غيّره إذا أردت أكبر/أصغر */
+  height: auto;
+  display: block;
+}
+
+/* نص فرنسي على اليسار */
+.french-text {
+  direction: ltr;
+  text-align: left;
+  font-weight: bold;
+  color: #006400;
+  padding: 0 10px;
+  }
+
+/* نص عربي على اليمين */
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+  font-weight: bold;
+  color: #006400;
+  padding: 0 10px;
+}
+
+/* تجاوب: على الشاشات الصغيرة نرصف عموديًا واللوجو يبقى فوق */
+@media (max-width: 768px) {
+  .header-grid {
+    grid-template-columns: 1fr; /* عمود واحد */
+    text-align: center;
+    gap: 10px;
+  }
+  .logo {
+    width: 140px;
+  }
+  .french-text, .arabic-text {
+    text-align: center; /* عند الهواتف نوسّط النصوص لتبدو مرتبة */
+    direction: ltr; /* ترك الفرنكوفونية كما هي (لكن يظهر مركزي) */
+  }
+  .arabic-text {
+    direction: rtl; /* حافظ على اتجاه الكتابة العربية حتى لو متوسّط */
+  }
+}
