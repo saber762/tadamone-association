@@ -13,197 +13,36 @@
     
     <!-- Font Awesome للأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-         body{
-            font-family: 'Cairo', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f6f8;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        header {
-            background-color: white;
-            color: #006400;
-            padding: 20px 0;
-            border-bottom: 3px solid #006400;
-        }
-
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-
-        .header-text {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .arabic-text {
-            flex: 1;
-            text-align: right; /* العربي على اليمين */
-            font-weight: bold;
-        }
-
-        .french-text {
-            flex: 1;
-            text-align: left; /* الفرنسي على اليسار */
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 50px 20px;
-            background-color: white;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .bg-light {
-            background-color: #ffe6e6; /* أحمر فاتح */
-        }
-       .bilingual {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .text-ar {
-            flex: 1;
-            min-width: 300px;
-            direction: rtl;
-            text-align: right;
-        }
-
-        .text-fr {
-            flex: 1;
-            min-width: 300px;
-            direction: ltr;
-            text-align: left;
-        }
-
-        h2 {
-            color: #006400;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        #contact a {
-            color: #006400;
-           text-decoration: none;
-        }
-
-        #contact a:hover {
-            text-decoration: underline;
-        }
-
-        #contact i {
-            color: #006400;
-            margin-right: 8px;
-        }
-
-        .text-ar i.file-icon {
-            margin-left: 8px;
-            margin-right: 0;
-        }
-
-        code {
-            background-color: #f0f0f0;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.95em;
-        }
-
-        footer {
-            background-color: #006400;
-            color: white;
-            text-align: center;
- padding: 15px 0;
-        }
-
-        a {
-            color: #006400;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .bilingual {
-                flex-direction: column;
-                text-align: center;
-            }
-            .text-ar, .text-fr {
-                text-align: center;
-            }
-            .header-text {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
-body>
 
     <!-- رأس الموقع -->
 <header>
   <div class="container header-grid">
-    <!-- فرنسي على اليسار -->
-    <div class="french-text">
-      <p>Royaume du Maroc, Association de Solidarité pour la Pêche Côtière à Laâyoune, affiliée à la Confédération Marocaine de la Pêche Côtière</p>
-    </div>
-
     <!-- اللوجو في الوسط -->
     <div class="logo-center">
       <img src="logo.png" alt="لوغو الجمعية" class="logo">
     </div>
 
-    <!-- عربي على اليمين -->
+    <!-- نص عربي -->
     <div class="arabic-text">
       <p>المملكة المغربية جمعية التضامن للصيد الساحلي بالعيون المنضوية تحت لواء الكنفدرالية المغربية للصيد الساحلي</p>
     </div>
   </div>
 </header>
 
-
     <!-- من نحن -->
     <section id="about" class="section">
-        <div class="container bilingual">
+        <div class="container">
             <div class="text-ar">
                 <h2>من نحن</h2>
                 <p>جمعية تضامن للصيد الساحلي بالعيون هي جمعية مهنية تعمل تحت لواء الكونفدرالية المغربية للصيد الساحلي. تهدف الجمعية إلى تحسين ظروف العمل للبحارة ودعم المشاريع المجتمعية وتعزيز التنمية المستدامة في قطاع الصيد الساحلي بالمغرب.</p>
             </div>
-            <div class="text-fr">
-                <h2>Qui sommes-nous</h2>
-                <p>L'Association de Solidarité pour la Pêche Côtière à Laâyoune est une association professionnelle affiliée à la Confédération Marocaine de la Pêche Côtière. Elle vise à améliorer les conditions de travail des pêcheurs, soutenir les projets communautaires et promouvoir le développement durable dans le secteur de la pêche côtière au Maroc.</p>
-            </div>
         </div>
     </section>
-
     <!-- أنشطتنا وخدماتنا -->
     <section id="services" class="section bg-light">
-        <div class="container bilingual">
+        <div class="container">
             <div class="text-ar">
                 <h2>أنشطتنا وخدماتنا</h2>
                 <ul>
@@ -212,39 +51,22 @@ body>
                     <li>ورش عمل وتدريبات في مجال الصيد البحري.</li>
                 </ul>
             </div>
-            <div class="text-fr">
-                <h2>Nos activités et services</h2>
-                <ul>
-                    <li>Soutien aux pêcheurs pour améliorer leurs conditions de travail.</li>
-                    <li>Mise en œuvre de projets communautaires et de développement.</li>
-                    <li>Ateliers et formations dans le domaine de la pêche côtière.</li>
-                </ul>
-            </div>
         </div>
     </section>
 
     <!-- تواصل معنا -->
     <section id="contact" class="section">
-        <div class="container bilingual">
+        <div class="container">
             <div class="text-ar">
                 <h2>تواصل معنا</h2>
                 <p><i class="fas fa-phone"></i> الهاتف: <a href="tel:0661769410">0661769410</a></p>
                 <p><i class="fas fa-fax"></i> الفاكس: 0528998291</p>
                 <p><i class="fas fa-envelope"></i> البريد الإلكتروني: <a href="mailto:groupe.bidaghine@gmail.com">groupe.bidaghine@gmail.com</a></p>
                 <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع الحاج أحمد باحنيني، المرسى العيون</p>
-
-            </div>
-            <div class="text-fr">
-                <h2>Contactez-nous</h2>
-                <p><i class="fas fa-phone"></i> Téléphone: <a href="tel:0661769410">0661769410</a></p>
-                <p><i class="fas fa-fax"></i> Fax: 0528998291</p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:groupe.bidaghine@gmail.com">groupe.bidaghine@gmail.com</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Adresse: Rue Al Haj Ahmed Bahennini, Le Mersa, Laâyoune</p>
-        
             </div>
         </div>
     </section>
-
+    
     <!-- الفوتر -->
     <footer>
         <p>© 2025 جمعية تضامن للصيد الساحلي بالعيون. جميع الحقوق محفوظة.</p>
