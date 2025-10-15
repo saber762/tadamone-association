@@ -120,7 +120,7 @@ footer {
 }
 
 /* تجاوب الهواتف */
-@media (max-width: 768px) {
+ (max-width: 768px) {
     .header-grid {
                grid-template-columns: 1fr;
         text-align: center;
@@ -138,4 +138,5 @@ footer {
     .text-ar {
         text-align: center;
     }
+
 }
